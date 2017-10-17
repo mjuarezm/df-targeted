@@ -14,7 +14,7 @@ var getDomain = function(url) {
 }
 
 
-// Set the host name in HTTP request to CDN to the domain of the censored page. 
+// Set the host name of CDN requests to the censored domain. 
 chrome.webRequest.onBeforeSendHeaders.addListener(function(details) {
   details.requestHeaders.push({
     name: 'Host',
