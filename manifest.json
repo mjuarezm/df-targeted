@@ -1,0 +1,8 @@
+{
+  "name": "df-targeted",
+  "description": "Example to demonstrate the use of domain fronting with a CDN reflector.",
+  "version": "1.0",
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": { "scripts": ["background.js"] },
+  "manifest_version": 2
+}
