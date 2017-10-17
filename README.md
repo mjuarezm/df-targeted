@@ -1,3 +1,5 @@
+![DISCLAIMER](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Dialog-warning-orange.svg/40px-Dialog-warning-orange.svg.png "experimental")  **experimental - PLEASE BE CAREFUL. Intended for reasearch purposes.**
+
 # df-targeted
 
 This is a minimal chrome extension that shows how to use domain fronting for a specific website. The default values define Akamai as CDN and pinterest.com as the censored page.
