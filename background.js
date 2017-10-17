@@ -16,7 +16,6 @@ var getDomain = function(url) {
 
 // Set the host name in HTTP request to CDN to the domain of the censored page. 
 chrome.webRequest.onBeforeSendHeaders.addListener(function(details) {
-  console.log("Visiting: ", CENSORED);
   details.requestHeaders.push({
     name: 'Host',
     value: getDomain(CENSORED)
@@ -29,8 +28,6 @@ chrome.webRequest.onBeforeSendHeaders.addListener(function(details) {
 
 // Intercept requests to the censored page and redirect them to CDN.
 chrome.webRequest.onBeforeRequest.addListener(function (details) {
-  url = getDomain(details.url);
-  console.log("HTTP request intercepted:", url);
   return { redirectUrl: CDN };
 },
 {urls: [CENSORED]},
